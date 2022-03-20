@@ -1,0 +1,48 @@
+.App {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 40px;
+}
+.App-div {
+    border: 4px solid darkolivegreen;
+    background-image: url('https://www.teahub.io/photos/full/13-133175_decent-wallpapers.png');
+    font-size: 18px;
+    text-align: center;
+    background-repeat: inherit;
+}
+h1,
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkblue;
+    text-align: center;
+}
+input,
+button {
+    padding: 3px;
+    border-radius: 5px;
+}
+.cardProduct {
+    margin: auto;
+    max-width: 500px;
+    border: 4px solid black;
+    background-image: url('https://coolbackgrounds.io/images/backgrounds/index/ranger-4df6c1b6.png');
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    box-shadow: 3px 6px 10px 3px darkolivegreen;
+}
+.text-danger {
+    color: red;
+}
+.cardForum {
+    text-align: left;
+    padding-left: 10px;
+    margin: auto;
+    max-width: 1000px;
+    border: 4px solid black;
+    background-image: url('https://coolbackgrounds.io/images/backgrounds/index/ranger-4df6c1b6.png');
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    box-shadow: 3px 6px 10px 3px darkolivegreen;
+}
+.buttonForum {
+    text-align: center;
+}
