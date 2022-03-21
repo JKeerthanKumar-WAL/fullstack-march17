@@ -101,7 +101,7 @@ const Forum = () => {
     };
     return (
         <div className="App-div">
-            <h1>User Details</h1>
+            <h1>Book Details</h1>
             <form onSubmit={formik.handleSubmit} noValidate>
                 <b>Title : </b>
                 <input
