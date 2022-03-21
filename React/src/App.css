@@ -16,7 +16,8 @@ h2 {
     text-align: center;
 }
 input,
-button {
+button,
+textarea {
     padding: 3px;
     border-radius: 5px;
 }

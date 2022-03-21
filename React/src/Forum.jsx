@@ -77,9 +77,9 @@ const Forum = () => {
             return errors;
         },
     });
-    const deleteUser = (indexToDelete) => {
+    const deleteBook = (id) => {
         axios
-            .delete('/forum/' + indexToDelete)
+            .delete('/forum/' + id)
             .then((res) => {
                 console.log(res.data);
             })
@@ -88,9 +88,9 @@ const Forum = () => {
             });
         getForums();
     };
-    const deleteAll = () => {
+    const clearAll = () => {
         axios
-            .get('/forum/deleteall')
+            .get('/forum/clearall')
             .then((res) => {
                 console.log(res.data);
             })
@@ -169,7 +169,7 @@ const Forum = () => {
                         <div className="buttonForum">
                             <button
                                 onClick={() => {
-                                    deleteUser(index);
+                                    deleteBook(index);
                                 }}
                             >
                                 <b>Delete</b>
@@ -178,8 +178,8 @@ const Forum = () => {
                     </div>
                 );
             })}
-            <button onClick={deleteAll}>
-                <b>Delete All</b>
+            <button onClick={clearAll}>
+                <b>Clear All</b>
             </button>
         </div>
     );

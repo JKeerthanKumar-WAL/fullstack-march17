@@ -17,10 +17,10 @@ router.post("/", (req, res) => {
   forums.push({ title, author, dateOfAdding, body });
   res.send({ status: "New user details are added" });
 });
-router.delete("/:indexToDelete", (req, res) => {
-  console.log(req.params.indexToDelete);
+router.delete("/:id", (req, res) => {
+  console.log(req.params.id);
   let newForums = forums.filter((val, index) => {
-    if (index === parseInt(req.params.indexToDelete)) {
+    if (index === parseInt(req.params.id)) {
       return false;
     } else {
       return true;
@@ -29,7 +29,7 @@ router.delete("/:indexToDelete", (req, res) => {
   forums = newForums;
   res.send({ status: "Selected user details are deleted" });
 });
-router.get("/deleteall", (req, res) => {
+router.get("/clearall", (req, res) => {
   forums = [];
   res.send({ status: "All user details are removed" });
 });
